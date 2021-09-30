@@ -263,7 +263,26 @@ function parent_remove_google_fonts() {
 add_action('wp_enqueue_scripts', 'parent_remove_google_fonts', 100);
 
 // --------------------------------------------------------
+// Howel JS
+// --------------------------------------------------------
+
+function add_player_script() {
+	wp_enqueue_script( 'player', get_stylesheet_directory_uri() . '/js/player.js', array(), 1.0, true);
+}
+add_action( 'wp_enqueue_scripts', 'add_player_script' );
+
+function add_wave_script() {
+	wp_enqueue_script( 'siriwave', get_stylesheet_directory_uri() . '/siriwave.js', array(), 1.0, true);
+}
+add_action( 'wp_enqueue_scripts', 'add_wave_script' );
+
+
+wp_register_script( 'howl_js', 'https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js', null, null, true );
+wp_enqueue_script('howl_js');
+
+
+// --------------------------------------------------------
 // Custom gutenberg blocks
 // --------------------------------------------------------
 
-require get_template_directory() . '/inc/gutenberg.php';
+// require get_template_directory() . '/inc/gutenberg.php';
