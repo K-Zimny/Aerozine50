@@ -208,6 +208,10 @@ function blank_canvas_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'blank_canvas_body_classes' );
 
+// --------------------------------------------------------
+// File Enqueues
+// --------------------------------------------------------
+
 // dequeue parent css file
 
 function remove_parent_styles() {
@@ -257,3 +261,9 @@ function parent_remove_google_fonts() {
 }
 
 add_action('wp_enqueue_scripts', 'parent_remove_google_fonts', 100);
+
+// --------------------------------------------------------
+// Custom gutenberg blocks
+// --------------------------------------------------------
+
+require get_template_directory() . '/inc/gutenberg.php';
