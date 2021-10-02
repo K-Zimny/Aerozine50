@@ -69,6 +69,7 @@ body {
   color: var(--global--color-text);
   margin: 0;
   overflow-x: hidden;
+  font-family: var(--global--font-text);
 }
 
 .hide-element {
@@ -845,7 +846,6 @@ footer {
 /* ============================================================================================================================================================== */
 
 body {
-  background-color: rgb(128, 122, 122);
   height: 90vh;
   justify-content: center;
   display: flex;
@@ -1181,6 +1181,13 @@ body {
   justify-content: end;
 }
 
+/* Muisc Player Styles */
+
+#musicPlayer {
+  width: 80%;
+  margin: auto;
+}
+
 /* Title styles */
 
 #title {
@@ -1188,6 +1195,7 @@ body {
   flex-direction: column;
   font-size: 30px;
   margin-bottom: 50px;
+  color: #ff7600;
 }
 
 /* Progress bar */
@@ -1225,6 +1233,7 @@ body {
 #timer,
 #duration {
   margin: 0 20px;
+  color: #ff7600;
 }
 
 /* Audio styles */
