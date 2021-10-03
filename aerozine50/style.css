@@ -846,7 +846,7 @@ footer {
 /* ============================================================================================================================================================== */
 
 body {
-  height: 90vh;
+  /* height: 90vh; */
   justify-content: center;
   display: flex;
   flex-flow: column;
@@ -1255,4 +1255,40 @@ body {
 .controlsInner {
   display: flex;
   align-items: center;
+}
+
+/* Music Player Audio Igniter Styles */
+
+.ai-audioigniter > .ai-wrap {
+  background: #fff;
+}
+
+.ai-wrap .ai-track {
+  background-color: #f1f1f1;
+}
+
+.ai-wrap .ai-audio-control,
+.ai-wrap .ai-volume-bar.ai-volume-bar-active::before,
+.ai-wrap .ai-track:hover,
+.ai-wrap .ai-track.ai-track-active,
+.ai-wrap .ai-audio-control:hover,
+.ai-wrap .ai-audio-control:focus,
+.ai-wrap .ai-track-progress {
+  background-color: #fe7a09;
+}
+
+/* Artist Container */
+
+/* #playerOne,
+#playerTwo,
+#playerThree {
+  display: none;
+} */
+
+.hidden-block {
+  display: none;
+}
+
+.shown {
+  display: block;
 }
